@@ -1,15 +1,11 @@
 <?php
-    if(isset($_GET["id"]) && isset($_GET["speed"]) && isset($_GET["temp"]) && isset($_GET["pressure"])) {
+    if(isset($_GET["id"]) && isset($_GET["speed"])) {
         $id = $_GET["id"];
         $speed = $_GET["speed"];
-        $temp = $_GET["temp"];
-        $pressure = $_GET["pressure"];
         
         $cloudURL = "https://script.google.com/macros/s/AKfycby1sbuBRsAHxiMYj-Xyj-JMjVnh98tCs2kmdqVj6QV4Brhzv4U/exec?";
         $cloudURL .= "id=" . $id;
         $cloudURL .= "&speed=" . $speed;
-        $cloudURL .= "&temp=" . $temp;
-        $cloudURL .= "&pressure=" . $pressure;
         
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $cloudURL);

@@ -1,7 +1,7 @@
 <?php
     if(isset($_GET["id"]) && isset($_GET["speed"])) {
         $id = $_GET["id"];
-        $speed = $_GET["speed"];
+        $speed = $_GET["speed"]; 
         
         $cloudURL = "https://script.google.com/macros/s/AKfycby1sbuBRsAHxiMYj-Xyj-JMjVnh98tCs2kmdqVj6QV4Brhzv4U/exec?";
         $cloudURL .= "id=" . $id;

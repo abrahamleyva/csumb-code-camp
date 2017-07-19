@@ -50,12 +50,6 @@ function doGet(e) {
         case 'speed':
           rowData[2] = value;
           break;
-        case 'pressure':
-          rowData[3] = value;
-          break;
-        case 'temp':
-          rowData[4] = value;
-          break;
         default:
           result = "unsupported parameter";
       }
